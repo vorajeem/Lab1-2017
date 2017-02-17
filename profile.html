@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ELEN4010, Group (group number): Profile Page</title>
+    <meta charset="utf-8" />
+    <style>
+		.flex-container {
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-flex-flow: row wrap;
+		    flex-flow: row wrap;
+		    text-align: center;
+		}
+
+		.flex-container > * {
+		    padding: 15px;
+		    -webkit-flex: 1 100%;
+		    flex: 1 100%;
+		}
+
+		.article {
+		    text-align: left;
+		}
+
+		header {background: black;color:white;}
+		footer {background: #aaa;color:white;}
+		.nav {background:#eee;}
+
+    .nav ul {
+        margin-left: 3em;
+		    list-style-type: disc;;
+		    padding: 0;
+		}
+		.nav ul a {
+		    text-decoration: none;
+		}
+
+		.aside {
+			text-align: left;
+			border-left: thin solid black;
+		}
+
+		@media all and (min-width: 768px) {
+		    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+		    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+				.aside {-webkit-flex:2 0px;flex:2 0px;-webkit-order:3;order:3;}
+		    footer {-webkit-order:4;order:4;}
+		}
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <header>
+            <h1>ELEN4010, Group (group number): Profile Page</h1>
+        </header>
+
+        <nav class="nav">
+            <h2>Profiles:</h2>
+            <ul>
+                <li>(yourName)</li>
+                <li><a href="profile.html">(yourPartnersName)</a></li>
+            </ul>
+            <a href="index.html">Back</a>
+        </nav>
+
+        <article class="article">
+            <h1>(Your Name)</h1>
+            <p>(Bio...)</p>
+        </article>
+
+				<aside class="aside">
+					<h1>(Your face here!)</h1>
+				</aside>
+    </div>
+</body>
+
+</html>
